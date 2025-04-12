@@ -54,7 +54,7 @@ public class CreateOpportunityWithThreeTestcase extends BaseClass {
 
 		hp.getOppLink().click();
 		op.getSearchEdt().sendKeys(OppName);
-		op.oppotunity(1);
+		op.oppotunity();
 		op.getsearchButton().click();
 
 		boolean status = actoppName.contains(OppName);
@@ -101,7 +101,7 @@ public class CreateOpportunityWithThreeTestcase extends BaseClass {
 		UtilityClassObject.getTest().log(Status.INFO, "search created OppName from Opportunity page");
 		hp.getOppLink().click();
 		op.getSearchEdt().sendKeys(OppName);
-		op.oppotunity(1);
+		op.oppotunity();
 		op.getsearchButton().click();
 
 		UtilityClassObject.getTest().log(Status.INFO, "delete created OppName from Opportunity page");
@@ -149,7 +149,7 @@ public class CreateOpportunityWithThreeTestcase extends BaseClass {
 		UtilityClassObject.getTest().log(Status.INFO, "search created OppName from Opportunity page");
 		hp.getOppLink().click();
 		op.getSearchEdt().sendKeys(OppName);
-		op.oppotunity(1);
+		op.oppotunity();
 		op.getsearchButton().click();
 		op.getEditLink().click();
 

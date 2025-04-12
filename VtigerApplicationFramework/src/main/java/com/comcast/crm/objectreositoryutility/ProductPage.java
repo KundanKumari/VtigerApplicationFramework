@@ -6,7 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class ProductPage {
+import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
+
+public class ProductPage extends WebDriverUtility {
 
 	WebDriver driver;
 
@@ -51,9 +53,8 @@ public class ProductPage {
 		return searchBtn;
 	}
 
-	public void productPage(String prodName) {
-		Select select = new Select(searchDD);
-		select.selectByVisibleText(prodName);
+	public void productPage() {
+		select(searchDD, "Product Name");
 	}
 		
 

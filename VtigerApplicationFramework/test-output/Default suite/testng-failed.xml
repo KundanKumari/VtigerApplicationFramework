@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.comcast.documenttest.CreateDocumentWithFourTestCase">
+      <class name="com.comcast.producttest.CreateProductTest">
         <methods>
           <include name="congigAS"/>
-          <include name="CheckDocumentLinkTest"/>
           <include name="configAM"/>
           <include name="configBC"/>
           <include name="configBS"/>
           <include name="configBM"/>
+          <include name="CreateProductsTest"/>
           <include name="configAC"/>
         </methods>
-      </class> <!-- com.comcast.documenttest.CreateDocumentWithFourTestCase -->
+      </class> <!-- com.comcast.producttest.CreateProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

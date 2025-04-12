@@ -6,7 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class DocumentPage {
+import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
+
+public class DocumentPage extends WebDriverUtility{
 	WebDriver driver;
 
 	 public DocumentPage(WebDriver driver) {
@@ -68,14 +70,12 @@ public class DocumentPage {
 	public WebElement getTypeDD() {
 		return searchDD ;
 	}
-	public void Document(int index) throws Exception {
-		
-	     Select select=new Select(searchDD);
-	     select.selectByIndex(index);
-	}
-	public void Document() {
+	public void Document() throws Exception {
+	     select(searchDD, 1);	
+	     }
+	public void Document1() {
 		delLink.click();
-		driver.switchTo().alert().accept();
+		switchToAlertAndAccept(driver);
 	
 
 }}

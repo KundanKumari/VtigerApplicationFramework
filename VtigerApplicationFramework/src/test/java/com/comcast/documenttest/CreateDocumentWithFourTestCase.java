@@ -37,7 +37,7 @@ public class CreateDocumentWithFourTestCase extends BaseClass {
 
 		UtilityClassObject.getTest().log(Status.INFO, "Edit created docName in Documents page");
 		dp.getSearchEdt().sendKeys(docName);
-		dp.Document(1);
+		dp.Document();
 		dp.getsearchButton().click();
 		Thread.sleep(2000);
 
@@ -94,7 +94,7 @@ public class CreateDocumentWithFourTestCase extends BaseClass {
 
 		UtilityClassObject.getTest().log(Status.INFO, "search created docName in Documents page");
 		dp.getSearchEdt().sendKeys(docName);
-		dp.Document(1);
+		dp.Document();
 		dp.getsearchButton().click();
 		Thread.sleep(2000);
 		UtilityClassObject.getTest().log(Status.INFO, "Delete created docName in Documents page");

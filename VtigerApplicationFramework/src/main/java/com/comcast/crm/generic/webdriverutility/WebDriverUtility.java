@@ -74,6 +74,6 @@ public class WebDriverUtility {
 	}
 	public void mouseMoveToElement(WebDriver driver, WebElement element) {
 		Actions  action = new Actions(driver);
-		action.moveToElement(element);
+		action.moveToElement(element).perform();
 	}
 }

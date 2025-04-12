@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class EditingOpportunityInfoPage {
+public class EditingOpportunityInfoPage  {
 
 	WebDriver driver;
 	public EditingOpportunityInfoPage(WebDriver driver) {

@@ -38,7 +38,7 @@ public class CreateProductTest extends BaseClass {
 		hp.getProductsLink().click();
 
 		pp.getSearchText_field().sendKeys(productName);
-		pp.productPage("Product Name");
+		pp.productPage();
 		pp.getSearchBtn().click();
 
 		driver.findElement(By.xpath("//a[contains(.,'" + productName + "')]/parent::td/following-sibling::td/a[text()='del']")).click();

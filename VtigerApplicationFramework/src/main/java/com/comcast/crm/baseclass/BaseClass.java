@@ -42,7 +42,7 @@ public class BaseClass {
 	public void configBC(@Optional("chrome") String browser) throws Throwable {
 		System.out.println("Open the browser");
 		String Browser =browser;
-		if (Browser.equals("chrome")) {
+		if (Browser.equals(" chrome ")) {
 			driver = new ChromeDriver();
 		} else if (Browser.equals("firefox")) {
 			driver = new FirefoxDriver();
@@ -68,7 +68,7 @@ public class BaseClass {
 	}
 
 	@AfterMethod(groups = { "SmokeTest", "regression" })
-	public void configAM() {
+	public void configAM() throws InterruptedException {
 		System.out.println("log out to the application");
 		HomePage hp= new HomePage(driver);
 		hp.logout();

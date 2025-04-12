@@ -6,7 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class OpportunityPage {
+import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
+
+public class OpportunityPage extends WebDriverUtility {
 
 	WebDriver driver;
 	public OpportunityPage(WebDriver driver) {
@@ -49,10 +51,8 @@ public class OpportunityPage {
 	public WebElement getTypeDD() {
 		return searchDD ;
 	}
-	public void oppotunity(int index) throws Exception {
-		
-	     Select select=new Select(searchDD);
-	     select.selectByIndex(index);
+	public void oppotunity()throws Exception {
+     select(searchDD, 1);
 	}
 	
 }
